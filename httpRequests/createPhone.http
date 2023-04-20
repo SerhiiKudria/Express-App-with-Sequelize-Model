@@ -1,0 +1,14 @@
+# check valid user - 200
+POST http://localhost:5000/api/phones
+Content-Type: application/json
+
+{
+  "model":"5",
+  "brandId":1,
+  "manufacturedYear":2011,
+  "ramSize":2,
+  "procName":"Apple Silikon 11",
+  "displaySize":5,
+  "nfc":"true"
+}
+

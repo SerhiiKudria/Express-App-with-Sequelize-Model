@@ -1,0 +1,15 @@
+#check update existing user - 200
+PUT http://localhost:5000/api/phones/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "model":"5",
+  "brandId":1,
+  "manufacturedYear":2011,
+  "ramSize":2,
+  "procName":"Apple Silikon 11",
+  "displaySize":5,
+  "nfc":"true"
+}
+
+

@@ -12,8 +12,15 @@ module.exports = {
       model: {
         type: Sequelize.STRING
       },
-      brand: {
-        type: Sequelize.STRING
+      brandId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Brands',
+          key: 'id',
+        },
+        allowNull: false,
+        onDelete: 'RESTRICT',
+        onUpdate: 'CASCADE',
       },
       manufacturedYear: {
         type: Sequelize.INTEGER
@@ -24,7 +31,7 @@ module.exports = {
       procName: {
         type: Sequelize.STRING
       },
-      displazSize: {
+      displaySize: {
         type: Sequelize.INTEGER
       },
       nfc: {

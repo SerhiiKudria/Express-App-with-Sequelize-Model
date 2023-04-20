@@ -1,0 +1,4 @@
+# check get all user tasks - 200
+GET http://localhost:5000/api/brands/2/phones HTTP/1.1
+
+

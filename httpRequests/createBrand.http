@@ -1,0 +1,7 @@
+# check valid user - 200
+POST http://localhost:5000/api/brands
+Content-Type: application/json
+
+{
+  "body":"Nokia"
+}

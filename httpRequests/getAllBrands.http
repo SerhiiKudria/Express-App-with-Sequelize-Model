@@ -1,0 +1,4 @@
+# check valid user - 200
+GET http://localhost:5000/api/brands
+Content-Type: application/json
+
